@@ -1,4 +1,4 @@
-dist: xenial
+dist: bionic
 
 env:
   - BUILD_ENV="travis"
@@ -15,11 +15,7 @@ jobs:
     - stage: test
       language: node_js
       name: Test
-      node_js: 11
-      before_cache:
-      before_script:
-      before_install:
-        - npm i -g npm@6.7.0
+      node_js: 18
       install:
         - npm ci
       script:
