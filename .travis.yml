@@ -1,9 +1,9 @@
 language: node_js
-dist: xenial
+dist: bionic
 node_js:
   - 11
   - 10
-  - 8
+  - 9
   - "node"
 env:
   - BUILD_ENV="travis"
