@@ -1,12 +1,26 @@
-language: node_js
-dist: bionic
-node_js:
-  - 11
-  - 10
-  - 9
-  - "node"
+dist: xenial
+
 env:
   - BUILD_ENV="travis"
+
 branches:
   only:
     - master
+
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test
+      language: node_js
+      name: Test
+      node_js: 10
+      before_cache:
+      before_script:
+      before_install:
+        - npm i -g npm@6.7.0
+      install:
+        - npm ci
+      script:
+        - npm run --silent test
