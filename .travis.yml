@@ -15,7 +15,9 @@ jobs:
     - stage: test
       language: node_js
       name: Test
-      node_js: 11
+      node_js:
+        - 10
+        - 11
       before_cache:
       before_script:
       before_install:
