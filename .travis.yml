@@ -22,7 +22,7 @@ jobs:
       before_script:
       before_install:
         - npm i -g npm@6.7.0
-        - npm set strict-ssl false
+        - npm install -S cucumber
       install:
         - npm ci
       script:
