@@ -15,12 +15,13 @@ jobs:
     - stage: test
       language: node_js
       name: Test
-      node_js: 10
+      node_js: 11
       before_cache:
       before_script:
       before_install:
         - npm i -g npm@6.7.0
+        - npm set strict-ssl false
       install:
         - npm ci
       script:
-        - npm run --silent test
+        - npm run test
