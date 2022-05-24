@@ -15,7 +15,7 @@ jobs:
     - stage: test
       language: node_js
       name: Test
-      node_js: 17
+      node_js: 10
       install:
         - npm ci
       script:
