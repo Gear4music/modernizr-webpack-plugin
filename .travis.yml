@@ -1,4 +1,4 @@
-dist: bionic
+dist: xenial
 
 env:
   - BUILD_ENV="travis"
