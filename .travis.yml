@@ -1,5 +1,8 @@
 dist: xenial
 
+addons:
+  chrome: stable
+
 env:
   - BUILD_ENV="travis"
 

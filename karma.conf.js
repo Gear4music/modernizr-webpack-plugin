@@ -18,7 +18,7 @@ function makeDefaultConfig() {
     frameworks: ['mocha', 'sinon-chai'],
     preprocessors: preprocessors,
     reporters: ['progress'],
-    browsers: (debug ? ['PhantomJS', 'Chrome'] : ['PhantomJS']),
+    browsers: (debug ? ['Chromium', 'Chrome'] : ['Chromium']),
     webpack: {
       plugins: webpackConfig.plugins
     },
@@ -29,7 +29,6 @@ function makeDefaultConfig() {
       require('karma-webpack'),
       require('karma-mocha'),
       require('karma-sinon-chai'),
-      require('karma-phantomjs-launcher'),
       require('karma-chrome-launcher')
     ],
     logLevel: 'INFO'
