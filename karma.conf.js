@@ -18,7 +18,7 @@ function makeDefaultConfig() {
     frameworks: ['mocha', 'sinon-chai'],
     preprocessors: preprocessors,
     reporters: ['progress'],
-    browsers: (debug ? ['Chromium', 'Chrome'] : ['Chromium']),
+    browsers: (debug ? ['ChromeHeadless', 'Chrome'] : ['ChromeHeadless']),
     webpack: {
       plugins: webpackConfig.plugins
     },
