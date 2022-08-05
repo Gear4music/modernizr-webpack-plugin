@@ -1,6 +1,6 @@
 {
   "name": "modernizr-webpack-plugin",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Creates a custom Modernizr build during webpack compile. Integrates with html-webpack-plugin.",
   "main": "index.js",
   "files": [
@@ -31,26 +31,23 @@
   "homepage": "https://github.com/alexpalombaro/modernizr-webpack-plugin#readme",
   "dependencies": {
     "modernizr": "^3.5.0",
-    "object-assign": "^4.0.1",
     "uglify-js": "^2.4.24",
     "webpack-core": "^0.6.7",
-    "html-webpack-plugin": "^3.2.0"
+    "html-webpack-plugin": "^5.5.0"
   },
   "devDependencies": {
     "bluebird": "^2.10.2",
     "chai": "^3.3.0",
     "del": "^2.0.2",
     "eslint": "^4.18.2",
-    "karma": "^0.13.10",
-    "karma-chrome-launcher": "^0.2.1",
-    "karma-mocha": "^0.2.0",
-    "karma-phantomjs-launcher": "^0.2.1",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
     "karma-sinon-chai": "^1.1.0",
-    "karma-webpack": "^1.7.0",
+    "karma-webpack": "^5.0",
     "mocha": "^2.3.3",
-    "phantomjs": "^1.9.20",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0",
-    "webpack": "^1.12.2"
+    "webpack": "^5.0"
   }
 }

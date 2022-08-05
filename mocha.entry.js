@@ -83,9 +83,9 @@ describe('[ModernizrWebpackPlugin] Build Tests', function () {
     webpackConfig.output.publicPath = 'public/';
     webpack(webpackConfig).then(function () {
       fs.readFileAsync(path.resolve(OUTPUT_PATH, 'index.html'), 'utf8').then(function (data) {
-        expect(/<script\ssrc="public\/modernizr-bundle.js">/.test(data)).to.be.true;
+        expect(/<script(.*)src="public\/entry-bundle.js">/.test(data)).to.be.true;
         done();
-      })
+      });
     }).catch(done);
   });
 

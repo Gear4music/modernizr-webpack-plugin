@@ -1,12 +1,25 @@
-language: node_js
-node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "node"
+dist: xenial
+
+addons:
+  chrome: stable
+
 env:
   - BUILD_ENV="travis"
+
 branches:
   only:
     - master
+
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test
+      language: node_js
+      name: Test
+      node_js: 10
+      install:
+        - npm ci
+      script:
+        - npm run test
