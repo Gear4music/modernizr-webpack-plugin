@@ -1,0 +1,19 @@
+name: Publish to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  npm-publish:
+    uses: Gear4music/infra-utility-github-actions/.github/workflows/npm-release.yml@main
+    secrets: inherit
+    with:
+      version: 10
+      scope: "@gear4music"
+      registry: "https://europe-npm.pkg.dev/g4m-docker-images/npm-gear4music/"

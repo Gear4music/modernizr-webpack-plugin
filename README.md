@@ -12,6 +12,17 @@ Includes support to integrate with [html-webpack-plugin](https://www.npmjs.com/p
 $ npm install modernizr-webpack-plugin
 ```
 
+### Deployment
+
+ **This repo uses [semantic-release](https://github.com/semantic-release/semantic-release) to automaticaly tag upon merge to main**.
+
+All commits to this repository must follow conventional commit standards! see [here](https://www.conventionalcommits.org/). This is required for the deployment pipeline to run.
+
+To contribute to this repository: create a PR, make your changes, merge, then view github actions to check the deployment runs successfully.
+
+This image is deployed to Google Artifact Registry [here](https://console.cloud.google.com/artifacts/npm/g4m-docker-images/europe/npm-gear4music/@gear4music%2Fmodernizr-webpack-plugin?inv=1&invt=AbxMwQ&project=g4m-docker-images) via github actions in this repository.
+
+
 ## Usage
 
 Add the modernizr-webpack-plugin to your list of plugins in the webpack config
